@@ -9,11 +9,22 @@ form.addEventListener("submit", function(event) {
     if (value === "") return;
 
     const li = document.createElement("li");
-    li.textContent = value;
 
-    li.addEventListener("click", function() {
-        li.classList.toggle("completed");
+    // checkbox
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+
+    // tekst zadania
+    const span = document.createElement("span");
+    span.textContent = value;
+
+    // zaznaczanie jako wykonane
+    checkbox.addEventListener("change", function() {
+        span.classList.toggle("completed");
     });
+
+    li.appendChild(checkbox);
+    li.appendChild(span);
 
     taskList.appendChild(li);
     input.value = "";
