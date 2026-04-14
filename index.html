@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
- <meta charset="UTF-8">
- <title>TODO App</title>
- <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <title>Lista zadań</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Moja lista zadań</h1>
 
-    <ul id="task-list"></ul>
+    <div>
+        <h1>Moja lista zadań</h1>
 
-    <form id="task-form">
-        <input id="task-input" type="text" placeholder="Wpisz tekst..." required>
-        <button type="submit">Dodaj</button>
-    </form>
+        <ul id="task-list"></ul>
 
-    <script src="app.js"></script>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Dodaj zadanie...">
+            <button type="submit">Dodaj</button>
+        </form>
+
+        <p id="counter"></p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

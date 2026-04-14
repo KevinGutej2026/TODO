@@ -15,7 +15,7 @@ body {
 }
 
 /* Kontener */
-body > * {
+body > div {
     width: 100%;
     max-width: 500px;
 }
@@ -33,11 +33,20 @@ h1 {
 }
 
 #task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: #ffffff;
     padding: 10px 15px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 6px;
+}
+
+/* Wykonane zadanie */
+.completed span {
+    text-decoration: line-through;
+    color: gray;
 }
 
 /* Formularz */
@@ -54,7 +63,7 @@ h1 {
 }
 
 button {
-    padding: 10px 15px;
+    padding: 8px 12px;
     border: none;
     background-color: #4CAF50;
     color: white;
@@ -64,4 +73,21 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+/* Przycisk usuwania */
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Licznik */
+#counter {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
 }
