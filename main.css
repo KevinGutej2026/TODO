@@ -97,3 +97,8 @@ li {
     gap: 10px;
     align-items: center;
 }
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
